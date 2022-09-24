@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2022-09-09",
+      "description": "Vitadinni",
+      "category": "fashion",
+      "amount": "12",
+      "id": 13
     }
   ]
 }
