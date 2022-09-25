@@ -18,12 +18,21 @@ function TransactionsList({transactions}) {
           <th>
             <h3 className="ui center aligned header">Amount</h3>
           </th>
+{/**create action column */}
+          <th>
+            <h3 className="ui center aligned header">Action</h3>
+          </th>
         </tr>
         {/* render a list of <Transaction> components here */}
         {transactions.map((transaction)=>(
           
-        <Transaction  key={transaction.id} date={transaction.date} description={transaction.description}
-        category={transaction.category} amount={transaction.amount}/>
+        <Transaction 
+         key={transaction.id} 
+         date={transaction.date} 
+         description={transaction.description}
+         category={transaction.category} 
+         amount={transaction.amount}
+         id={transaction.id}/>
         ))
         }
       </tbody>
